@@ -7,8 +7,8 @@
   "main": "dist/main.js",
   "ui": "ui/index.html",
   "icon": "icon.png",
-  "author": "Mulby Team",
-  "homepage": "https://github.com/mulby",
+  "author": "Mulby",
+  "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
   "minAppVersion": "1.0.0",
   "features": [
     {

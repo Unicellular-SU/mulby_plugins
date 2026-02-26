@@ -2,6 +2,8 @@
   "id": "计算稿纸",
   "name": "计算稿纸",
   "version": "1.0.0",
+  "author": "Mulby",
+  "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
   "displayName": "计算稿纸",
   "description": "插件描述",
   "main": "dist/main.js",

@@ -2,6 +2,8 @@
   "id": "json_editor",
   "name": "json_editor",
   "version": "1.0.0",
+  "author": "Mulby",
+  "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
   "displayName": "JSON 编辑器",
   "description": "强大的 JSON 编辑工具，支持格式化、压缩、校验、转换、树形编辑和过滤",
   "type": "developer",

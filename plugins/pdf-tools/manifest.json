@@ -2,6 +2,8 @@
   "id": "pdf-tools",
   "name": "pdf-tools",
   "version": "1.0.0",
+  "author": "Mulby",
+  "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
   "displayName": "PDF 拆分工具",
   "description": "将PDF文件按页面拆分为多个独立文档，支持自动拆分和手动拆分",
   "main": "dist/main.js",
