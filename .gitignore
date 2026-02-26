@@ -4,3 +4,7 @@ dist/
 *.log
 .env
 .env.local
+# Build artifacts from local build script
+*.inplugin
+plugins_temp.jsonl
+releases/
