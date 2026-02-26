@@ -1,0 +1,78 @@
+name: Build Plugins
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '25'
+
+      - name: Install latest mulby-cli globally
+        run: npm install -g mulby-cli
+
+      - name: Create releases directory
+        run: mkdir -p releases
+
+      - name: Build and pack all plugins
+        run: |
+          PLUGINS_JSON='{"version":"1.0.0","plugins":[]}'
+          for plugin_dir in plugins/*/; do
+            if [ -f "$plugin_dir/package.json" ]; then
+              plugin_name=$(basename "$plugin_dir")
+              echo "Processing plugin: $plugin_name"
+              cd "$plugin_dir"
+              npm install
+              npm run pack
+              if [ -f "*.inplugin" ]; then
+                inplugin_file=$(ls *.inplugin 2>/dev/null | head -n1)
+                if [ -n "$inplugin_file" ]; then
+                  mv "$inplugin_file" ../../releases/
+                  # Read manifest.json and create plugin entry
+                  if [ -f "manifest.json" ]; then
+                    PLUGIN_INFO=$(node -e "
+                      const fs = require('fs');
+                      const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
+                      const pkgJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+                      console.log(JSON.stringify({
+                        id: manifest.id,
+                        name: manifest.displayName || manifest.name,
+                        version: manifest.version,
+                        author: manifest.author || 'Unknown',
+                        description: manifest.description || '',
+                        downloadUrl: 'https://github.com/${{ github.repository }}/releases/download/latest/$inplugin_file',
+                        lastPackageTime: new Date().toISOString()
+                      }));
+                    ")
+                    PLUGINS_JSON=$(echo "$PLUGINS_JSON" | node -e "
+                      const stdin = require('fs').readFileSync(0, 'utf-8');
+                      const plugin = $PLUGIN_INFO;
+                      const data = JSON.parse(stdin);
+                      data.plugins.push(plugin);
+                      console.log(JSON.stringify(data, null, 2));
+                    ")
+                  fi
+                fi
+              fi
+              cd ../../..
+            fi
+          done
+          echo "$PLUGINS_JSON" > plugins.json
+
+      - name: Commit and push packaged files
+        if: success()
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add releases/* plugins.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Add packaged plugin files and update plugins.json" && git push)

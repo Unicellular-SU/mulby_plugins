@@ -1,0 +1,50 @@
+{
+  "id": "@mulby/batch-image-processing",
+  "name": "batch-image-processing",
+  "version": "1.0.0",
+  "author": "mulby",
+  "displayName": "图片批量处理",
+  "description": "批量图片处理工具：压缩、水印、格式转换、尺寸调整、裁剪、旋转、翻转、边框、圆角",
+  "main": "dist/main.js",
+  "ui": "ui/index.html",
+  "icon": "icon.png",
+  "window": {
+    "width": 900,
+    "height": 650
+  },
+  "features": [
+    {
+      "code": "main",
+      "explain": "图片批量处理",
+      "cmds": [
+        {
+          "type": "keyword",
+          "value": "图片批量处理"
+        },
+        {
+          "type": "keyword",
+          "value": "批量图片"
+        },
+        {
+          "type": "keyword",
+          "value": "img"
+        },
+        {
+          "type": "img",
+          "exts": [
+            "png",
+            "jpg",
+            "jpeg",
+            "webp",
+            "tiff",
+            "avif",
+            "bmp",
+            "gif",
+            "ico",
+            "svg"
+          ]
+        }
+      ]
+    }
+  ]
+}

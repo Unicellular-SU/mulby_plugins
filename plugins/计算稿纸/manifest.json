@@ -1,0 +1,28 @@
+{
+  "id": "计算稿纸",
+  "name": "计算稿纸",
+  "version": "1.0.0",
+  "displayName": "计算稿纸",
+  "description": "插件描述",
+  "main": "dist/main.js",
+  "ui": "ui/index.html",
+  "icon": "icon.png",
+  "features": [
+    {
+      "code": "main",
+      "explain": "主功能",
+      "cmds": [
+        {
+          "type": "keyword",
+          "value": "calcpaper",
+          "explain": "计算稿纸"
+        },
+        {
+          "type": "regex",
+          "match": "^[\\s,()+\\-*/.%×÷]*\\d[\\s\\d,()+\\-*/.%×÷]*$",
+          "explain": "检测到算式"
+        }
+      ]
+    }
+  ]
+}

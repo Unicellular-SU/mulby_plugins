@@ -1,0 +1,33 @@
+{
+  "id": "password-manager",
+  "name": "password-manager",
+  "version": "1.0.0",
+  "author": "mulby",
+  "displayName": "password-manager",
+  "description": "插件描述",
+  "main": "dist/main.js",
+  "ui": "ui/index.html",
+  "icon": "icon.png",
+  "features": [
+    {
+      "code": "main",
+      "explain": "主功能",
+      "cmds": [
+        {
+          "type": "keyword",
+          "value": "password-manager"
+        }
+      ]
+    }
+  ],
+  "window":{
+    "width": 800,
+    "height": 600,
+    "minWidth": 600,
+    "minHeight": 400
+  },
+  "pluginSetting":{
+    "single": true,
+    "defaultDetached": false
+  }
+}
