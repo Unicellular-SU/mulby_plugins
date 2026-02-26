@@ -2,22 +2,13 @@
   "version": "1.0.0",
   "plugins": [
     {
-      "id": "计算稿纸",
-      "name": "计算稿纸",
-      "version": "1.0.0",
-      "author": "Unknown",
-      "description": "插件描述",
-      "downloadUrl": "./releases/计算稿纸-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:53:56.974Z"
-    },
-    {
       "id": "ai-api-test",
       "name": "ai-api-test",
       "version": "1.0.0",
       "author": "mulby",
       "description": "插件描述",
-      "downloadUrl": "./releases/ai-api-test-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:04.205Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/ai-api-test-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:18.112Z"
     },
     {
       "id": "ai-translator",
@@ -25,8 +16,8 @@
       "version": "1.0.0",
       "author": "mulby",
       "description": "使用系统内置 AI 的翻译插件，支持语言选择与模型配置",
-      "downloadUrl": "./releases/ai-translator-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:10.868Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/ai-translator-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:24.672Z"
     },
     {
       "id": "@mulby/batch-image-processing",
@@ -34,8 +25,8 @@
       "version": "1.0.0",
       "author": "mulby",
       "description": "批量图片处理工具：压缩、水印、格式转换、尺寸调整、裁剪、旋转、翻转、边框、圆角",
-      "downloadUrl": "./releases/batch-image-processing-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:18.985Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/batch-image-processing-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:31.584Z"
     },
     {
       "id": "clipboard-history",
@@ -43,17 +34,8 @@
       "version": "1.0.0",
       "author": "mulby",
       "description": "查看和管理剪贴板历史记录，支持文本、图片、文件",
-      "downloadUrl": "./releases/clipboard-history-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:25.585Z"
-    },
-    {
-      "id": "color_helper",
-      "name": "color_helper",
-      "version": "1.0.0",
-      "author": "mulby",
-      "description": "插件描述",
-      "downloadUrl": "./releases/color_helper-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:30.521Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/clipboard-history-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:38.169Z"
     },
     {
       "id": "@mulby/color-converter",
@@ -61,8 +43,17 @@
       "version": "1.0.0",
       "author": "Mulby Team",
       "description": "HEX、RGB、HSL 颜色格式互转，支持颜色预览和取色",
-      "downloadUrl": "./releases/color-converter-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:35.259Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/color-converter-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:41.650Z"
+    },
+    {
+      "id": "color_helper",
+      "name": "color_helper",
+      "version": "1.0.0",
+      "author": "mulby",
+      "description": "插件描述",
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/color_helper-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:45.144Z"
     },
     {
       "id": "currency-converter",
@@ -70,8 +61,8 @@
       "version": "1.0.0",
       "author": "Mulby Team",
       "description": "将输入的数字金额转换为人民币大写形式",
-      "downloadUrl": "./releases/currency-converter-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:38.061Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/currency-converter-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:46.315Z"
     },
     {
       "id": "encode_helper",
@@ -79,8 +70,8 @@
       "version": "1.0.0",
       "author": "Mulby Plugin Developer",
       "description": "编码小助手 - 集合时间转换、base64编解码、URL编解码、哈希加密、Unicode、UUID、进制转换、HTML转义",
-      "downloadUrl": "./releases/encode_helper-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:42.861Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/encode_helper-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:49.611Z"
     },
     {
       "id": "@mulby/encoding-converter",
@@ -88,8 +79,8 @@
       "version": "1.0.0",
       "author": "Mulby Team",
       "description": "Text encoding converter (UTF-8, GBK), Base64/Hex transport, URL encoding, and Huffman compression visualizer.",
-      "downloadUrl": "./releases/encoding-converter-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:47.905Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/encoding-converter-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:53.275Z"
     },
     {
       "id": "image_stitching",
@@ -97,8 +88,8 @@
       "version": "1.0.0",
       "author": "mulby",
       "description": "将多张图片任意纵向裁切后拼接成一张长图",
-      "downloadUrl": "./releases/image_stitching-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:53.121Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/image_stitching-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:06:56.569Z"
     },
     {
       "id": "ip_look",
@@ -106,8 +97,8 @@
       "version": "1.0.0",
       "author": "mulby",
       "description": "查询本机IP和任意IP的地理位置信息",
-      "downloadUrl": "./releases/ip_look-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:54:58.641Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/ip_look-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:07:00.824Z"
     },
     {
       "id": "json_editor",
@@ -115,8 +106,8 @@
       "version": "1.0.0",
       "author": "Unknown",
       "description": "强大的 JSON 编辑工具，支持格式化、压缩、校验、转换、树形编辑和过滤",
-      "downloadUrl": "./releases/json_editor-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:55:06.536Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/json_editor-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:07:08.514Z"
     },
     {
       "id": "mortgage_calculator",
@@ -124,8 +115,8 @@
       "version": "1.0.0",
       "author": "mulby",
       "description": "专业的房贷计算器，支持商贷、公积金贷款、组合贷款计算，包含还款计划表、提前还款计算、利率对比等功能",
-      "downloadUrl": "./releases/mortgage_calculator-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:55:12.692Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/mortgage_calculator-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:07:18.054Z"
     },
     {
       "id": "@mulby/showcase",
@@ -133,8 +124,8 @@
       "version": "1.0.0",
       "author": "Mulby Team",
       "description": "综合展示 Mulby 所有 API 能力的示例插件，涵盖系统信息、剪贴板、文件管理、网络、屏幕捕获、媒体、高级设置和安全存储等功能",
-      "downloadUrl": "./releases/mulby-showcase-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:55:17.939Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/mulby-showcase-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:07:21.655Z"
     },
     {
       "id": "password-manager",
@@ -142,8 +133,8 @@
       "version": "1.0.0",
       "author": "mulby",
       "description": "插件描述",
-      "downloadUrl": "./releases/password-manager-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:55:25.031Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/password-manager-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:07:29.615Z"
     },
     {
       "id": "pdf-tools",
@@ -151,8 +142,8 @@
       "version": "1.0.0",
       "author": "Unknown",
       "description": "将PDF文件按页面拆分为多个独立文档，支持自动拆分和手动拆分",
-      "downloadUrl": "./releases/pdf-tools-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:56:06.261Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/pdf-tools-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:07:55.708Z"
     },
     {
       "id": "qrcode-helper",
@@ -160,8 +151,8 @@
       "version": "1.0.0",
       "author": "Mulby Team",
       "description": "简单好用的二维码生成与识别工具",
-      "downloadUrl": "./releases/qrcode-helper-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:56:11.772Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/qrcode-helper-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:07:59.467Z"
     },
     {
       "id": "reg_helper",
@@ -169,8 +160,8 @@
       "version": "1.0.0",
       "author": "mulby",
       "description": "JavaScript正则表达式编辑器，支持实时测试、匹配高亮和常用模式",
-      "downloadUrl": "./releases/reg_helper-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:56:16.853Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/reg_helper-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:08:02.752Z"
     },
     {
       "id": "scheduler-demo",
@@ -178,8 +169,17 @@
       "version": "1.0.0",
       "author": "mulby",
       "description": "演示后台任务和任务调度功能的示例插件",
-      "downloadUrl": "./releases/scheduler-demo-1.0.0.inplugin",
-      "lastPackageTime": "2026-02-26T06:56:35.983Z"
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/scheduler-demo-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:08:09.450Z"
+    },
+    {
+      "id": "计算稿纸",
+      "name": "计算稿纸",
+      "version": "1.0.0",
+      "author": "Unknown",
+      "description": "插件描述",
+      "downloadUrl": "https://github.com/Unicellular-SU/mulby_plugins/releases/download/latest/计算稿纸-1.0.0.inplugin",
+      "lastPackageTime": "2026-02-26T08:08:12.791Z"
     }
   ]
 }
