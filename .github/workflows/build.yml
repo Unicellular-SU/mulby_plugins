@@ -66,7 +66,7 @@ jobs:
                       version: manifest.version,
                       author: manifest.author || 'Unknown',
                       description: manifest.description || '',
-                      downloadUrl: 'https://github.com/${{ github.repository }}/releases/download/latest/$inplugin_file',
+                      downloadUrl: 'https://raw.githubusercontent.com/${{ github.repository }}/main/releases/$inplugin_file',
                       lastPackageTime: new Date().toISOString()
                     };
                     console.log(JSON.stringify(pluginInfo));

@@ -19,6 +19,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 CLEAN_UP=true
 DRY_RUN=false
 SANDBOX_MODE=false
+GITHUB_REPO=""  # Optional: owner/repo format for generating real GitHub URLs
 
 # Parse arguments
 while [[ $# -gt 0 ]]; do
@@ -35,6 +36,10 @@ while [[ $# -gt 0 ]]; do
       SANDBOX_MODE=true
       shift
       ;;
+    --repo)
+      GITHUB_REPO="$2"  # Format: owner/repo
+      shift 2
+      ;;
     --help)
       echo "Usage: ./build-local.sh [OPTIONS]"
       echo ""
@@ -42,6 +47,7 @@ while [[ $# -gt 0 ]]; do
       echo "  --no-cleanup    Keep build artifacts and node_modules (default: cleanup)"
       echo "  --dry-run       Show what would be done without executing"
       echo "  --sandbox       Run in a temporary directory (safest for testing)"
+      echo "  --repo OWNER/REPO  Generate GitHub download URLs (e.g., --repo Unicellular-SU/mulby_plugins)"
       echo "  --help          Show this help message"
       exit 0
       ;;
@@ -165,13 +171,19 @@ build_plugins() {
             const fs = require('fs');
             const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
             const pkgJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+            let downloadUrl;
+            if ('$GITHUB_REPO') {
+              downloadUrl = 'https://raw.githubusercontent.com/$GITHUB_REPO/main/releases/$inplugin_file';
+            } else {
+              downloadUrl = './releases/$inplugin_file';
+            }
             const pluginInfo = {
               id: manifest.id,
               name: manifest.displayName || manifest.name,
               version: manifest.version,
               author: manifest.author || 'Unknown',
               description: manifest.description || '',
-              downloadUrl: './releases/$inplugin_file',
+              downloadUrl: downloadUrl,
               lastPackageTime: new Date().toISOString()
             };
             console.log(JSON.stringify(pluginInfo));
