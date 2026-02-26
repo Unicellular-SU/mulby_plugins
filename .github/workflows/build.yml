@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -99,4 +102,4 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "github-actions[bot]"
           git add -f releases/* plugins.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Add packaged plugin files and update plugins.json" && git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Add packaged plugin files and update plugins.json" && git push)
