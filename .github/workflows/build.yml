@@ -33,6 +33,7 @@ jobs:
               echo "Processing plugin: $plugin_name"
               cd "$plugin_dir"
               npm install
+              npm run build
               npm run pack
               if [ -f "*.inplugin" ]; then
                 inplugin_file=$(ls *.inplugin 2>/dev/null | head -n1)
