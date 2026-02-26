@@ -27,48 +27,71 @@ jobs:
       - name: Build and pack all plugins
         run: |
           PLUGINS_JSON='{"version":"1.0.0","plugins":[]}'
+          
           for plugin_dir in plugins/*/; do
             if [ -f "$plugin_dir/package.json" ]; then
               plugin_name=$(basename "$plugin_dir")
               echo "Processing plugin: $plugin_name"
-              cd "$plugin_dir"
-              npm install
-              npm run build
-              npm run pack
-              if [ -f "*.inplugin" ]; then
-                inplugin_file=$(ls *.inplugin 2>/dev/null | head -n1)
-                if [ -n "$inplugin_file" ]; then
-                  mv "$inplugin_file" ../../releases/
-                  # Read manifest.json and create plugin entry
-                  if [ -f "manifest.json" ]; then
-                    PLUGIN_INFO=$(node -e "
-                      const fs = require('fs');
-                      const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
-                      const pkgJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-                      console.log(JSON.stringify({
-                        id: manifest.id,
-                        name: manifest.displayName || manifest.name,
-                        version: manifest.version,
-                        author: manifest.author || 'Unknown',
-                        description: manifest.description || '',
-                        downloadUrl: 'https://github.com/${{ github.repository }}/releases/download/latest/$inplugin_file',
-                        lastPackageTime: new Date().toISOString()
-                      }));
-                    ")
-                    PLUGINS_JSON=$(echo "$PLUGINS_JSON" | node -e "
-                      const stdin = require('fs').readFileSync(0, 'utf-8');
-                      const plugin = $PLUGIN_INFO;
-                      const data = JSON.parse(stdin);
-                      data.plugins.push(plugin);
-                      console.log(JSON.stringify(data, null, 2));
-                    ")
-                  fi
+              
+              # Use subshell to isolate directory changes
+              (
+                cd "$plugin_dir" || exit 1
+                
+                npm install || exit 1
+                npm run build || exit 1
+                npm run pack || exit 1
+                
+                # Find and move the inplugin file
+                inplugin_file=$(ls -1 *.inplugin 2>/dev/null | head -n1)
+                if [ -z "$inplugin_file" ]; then
+                  echo "Error: No .inplugin file generated for $plugin_name"
+                  exit 1
                 fi
-              fi
-              cd ../../..
+                
+                echo "Found inplugin file: $inplugin_file"
+                mv "$inplugin_file" ../../releases/
+                
+                # Read manifest.json and create plugin entry
+                if [ -f "manifest.json" ]; then
+                  node -e "
+                    const fs = require('fs');
+                    const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
+                    const pkgJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+                    const pluginInfo = {
+                      id: manifest.id,
+                      name: manifest.displayName || manifest.name,
+                      version: manifest.version,
+                      author: manifest.author || 'Unknown',
+                      description: manifest.description || '',
+                      downloadUrl: 'https://github.com/${{ github.repository }}/releases/download/latest/$inplugin_file',
+                      lastPackageTime: new Date().toISOString()
+                    };
+                    console.log(JSON.stringify(pluginInfo));
+                  " >> ../../plugins_temp.jsonl
+                fi
+              ) || {
+                echo "Failed to process plugin: $plugin_name"
+                exit 1
+              }
             fi
           done
-          echo "$PLUGINS_JSON" > plugins.json
+          
+          # Combine all plugin info into plugins.json
+          if [ -f "plugins_temp.jsonl" ]; then
+            node -e "
+              const fs = require('fs');
+              const lines = fs.readFileSync('plugins_temp.jsonl', 'utf-8').trim().split('\n');
+              const plugins = lines.map(line => JSON.parse(line));
+              const output = {
+                version: '1.0.0',
+                plugins: plugins
+              };
+              console.log(JSON.stringify(output, null, 2));
+            " > plugins.json
+            rm plugins_temp.jsonl
+          else
+            echo "$PLUGINS_JSON" > plugins.json
+          fi
 
       - name: Commit and push packaged files
         if: success()
