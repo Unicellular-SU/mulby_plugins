@@ -165,29 +165,18 @@ build_plugins() {
         print_success "  Found inplugin file: $inplugin_file"
         mv "$inplugin_file" ../../releases/
         
-        # Read manifest.json and create plugin entry
+        # Build Plugin Store Index v2 (Rich Metadata) entry
         if [ -f "manifest.json" ]; then
-          node -e "
-            const fs = require('fs');
-            const manifest = JSON.parse(fs.readFileSync('manifest.json', 'utf8'));
-            const pkgJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-            let downloadUrl;
-            if ('$GITHUB_REPO') {
-              downloadUrl = 'https://raw.githubusercontent.com/$GITHUB_REPO/main/releases/$inplugin_file';
-            } else {
-              downloadUrl = './releases/$inplugin_file';
-            }
-            const pluginInfo = {
-              id: manifest.id,
-              name: manifest.displayName || manifest.name,
-              version: manifest.version,
-              author: manifest.author || 'Unknown',
-              description: manifest.description || '',
-              downloadUrl: downloadUrl,
-              lastPackageTime: new Date().toISOString()
-            };
-            console.log(JSON.stringify(pluginInfo));
-          " >> ../../plugins_temp.jsonl
+          cd ../..
+          if [ -n "$GITHUB_REPO" ]; then
+            BASE_RAW="https://raw.githubusercontent.com/$GITHUB_REPO/main"
+            REPO_URL="https://github.com/$GITHUB_REPO"
+          else
+            BASE_RAW="./"
+            REPO_URL=""
+          fi
+          node scripts/build-plugin-index-entry.js "$plugin_name" "$inplugin_file" "$BASE_RAW" "$REPO_URL" >> plugins_temp.jsonl
+          cd - > /dev/null
         fi
       ); then
         SUCCESS_COUNT=$((SUCCESS_COUNT + 1))
