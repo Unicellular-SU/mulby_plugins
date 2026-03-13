@@ -1,0 +1,11 @@
+{
+  "name": "mulby_plugins",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "screenshot-plugins": "node scripts/screenshot-plugin-ui.js"
+  },
+  "devDependencies": {
+    "puppeteer": "^23.0.0"
+  }
+}
