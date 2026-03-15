@@ -9,7 +9,7 @@
       "author": "Mulby",
       "description": "插件描述",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/ai-api-test-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:05.989Z",
+      "lastPackageTime": "2026-03-15T05:04:58.806Z",
       "details": "# ai-api-test\n\n插件描述\n\n## 功能特性\n\n- 功能 1\n- 功能 2\n- 功能 3\n\n## 触发方式\n\n- `ai-api-test` - 主功能\n\n## 开发\n\n### 安装依赖\n\n```bash\nnpm install\n```\n\n### 开发模式\n\n```bash\nnpm run dev\n```\n\n### 构建\n\n```bash\nnpm run build\n```\n\n### 打包\n\n```bash\nnpm run pack\n```\n\n## 项目结构\n\n```\nai-api-test/\n├── manifest.json              # 插件配置\n├── package.json\n├── src/\n│   ├── main.ts                # 后端入口\n│   ├── ui/\n│   │   ├── App.tsx            # 主应用\n│   │   ├── main.tsx           # UI 入口\n│   │   ├── index.html         # HTML 模板\n│   │   ├── styles.css         # 全局样式\n│   │   ├── hooks/\n│   │   │   └── useMulby.ts  # Mulby API Hook\n│   │   └── types/\n│   │       └── mulby.d.ts   # 类型定义\n├── dist/                      # 后端构建输出\n├── ui/                        # UI 构建输出\n└── icon.png                   # 插件图标\n```\n\n## 许可证\n\nMIT License",
       "icon": {
         "type": "url",
@@ -21,7 +21,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "a84220c1e9e89a1f68bc0b07a2c4e7593c39cff8750f0d08f78c23df3d621c00",
+      "sha256": "6bd345f927f891096d0ec77e76934f89a738510f7feeb4c9e42cac2339fd5770",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/ai-api-test"
     },
@@ -33,7 +33,7 @@
       "author": "Mulby",
       "description": "使用系统内置 AI 的翻译插件，支持语言选择与模型配置",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/ai-translator-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:11.305Z",
+      "lastPackageTime": "2026-03-15T05:05:05.336Z",
       "details": "# AI Translator\n\n基于 Mulby 系统内置 AI 的翻译插件。\n\n## 已实现能力\n\n- 源语言可选，默认 `自动检测`\n- 目标语言可选\n- 翻译使用系统内置 `window.mulby.ai.call`\n- 内置翻译系统提示词（仅输出译文、保留格式、语义一致）\n- 设置页支持：\n  - 选择系统可用模型（来自 `ai.allModels()`）\n  - 设置默认目标语言（持久化到插件存储）\n\n## 创建命令\n\n此插件由以下命令创建：\n\n```bash\nnode ../packages/mulby-cli/dist/index.js create ai-translator\n```\n\n## 触发方式\n\n- `ai-translator` / `翻译` / `translate`：打开翻译页\n- `翻译设置` / `translator-settings`：打开设置页\n\n## 开发与打包\n\n```bash\nnpm install\nnpm run dev\nnpm run build\nnpm run pack\n```",
       "icon": {
         "type": "url",
@@ -45,7 +45,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "2c408fb1fb9487e6711973e3d4240986342dbb5d35e19a1f7d6adbd0d890bc61",
+      "sha256": "647803c37f78261637cf30ff354965e6f37e67bc1e9ffff04b6122cd60a57217",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/ai-translator"
     },
@@ -57,7 +57,7 @@
       "author": "Mulby",
       "description": "批量图片处理工具：压缩、水印、格式转换、尺寸调整、裁剪、旋转、翻转、边框、圆角",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/batch-image-processing-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:17.342Z",
+      "lastPackageTime": "2026-03-15T05:05:12.326Z",
       "icon": {
         "type": "url",
         "value": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/plugins/batch-image-processing/icon.png"
@@ -68,7 +68,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "b0f09f5e812b3d30b26a68730ade7411d2c152366db42e27722bb83d2f5cef54",
+      "sha256": "b24adcce150351b1b4e2a9f8cb0e125bf6962b3e3a37d7ce3f69cfd5fe5beefa",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/batch-image-processing"
     },
@@ -80,7 +80,7 @@
       "author": "Mulby",
       "description": "查看和管理剪贴板历史记录，支持文本、图片、文件",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/clipboard-history-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:22.722Z",
+      "lastPackageTime": "2026-03-15T05:05:18.728Z",
       "details": "# 剪贴板历史插件\n\n查看和管理剪贴板历史记录，支持文本、图片、文件。\n\n## 功能特性\n\n- ✅ **自动记录** - 自动记录所有剪贴板变化（文本、图片、文件）\n- ✅ **按时间倒序** - 最新的记录显示在最前面\n- ✅ **类型过滤** - 按文本、图片、文件类型过滤\n- ✅ **搜索功能** - 快速搜索文本内容和文件名\n- ✅ **收藏功能** - 收藏重要的记录，永久保留\n- ✅ **一键复制** - 点击即可复制历史记录到剪贴板\n- ✅ **统计信息** - 显示各类型记录的数量\n- ✅ **暗色主题** - 自动跟随系统主题\n\n## 触发方式\n\n- `剪贴板` - 打开剪贴板历史\n- `clipboard` - 打开剪贴板历史\n- `cb` - 打开剪贴板历史（快捷方式）\n\n## 使用说明\n\n### 查看历史\n\n1. 输入触发词（如 `剪贴板`）打开插件\n2. 历史记录按时间倒序显示\n3. 支持查看文本、图片预览、文件列表\n\n### 过滤和搜索\n\n- **类型过滤**：点击顶部的\"全部\"、\"文本\"、\"图片\"、\"文件\"、\"收藏\"按钮\n- **文本搜索**：在搜索框中输入关键词，支持搜索文本内容和文件名\n\n### 操作记录\n\n每条记录提供三个操作按钮：\n\n- **收藏** ⭐ - 收藏/取消收藏记录（收藏的记录不会被自动清理）\n- **复制** 📋 - 复制到剪贴板并自动关闭窗口\n- **删除** 🗑️ - 删除单条记录\n\n### 清空历史\n\n点击右上角的\"清空历史\"按钮可以清空所有历史记录（收藏的记录会保留）。\n\n## 数据存储\n\n- 历史记录存储在 SQLite 数据库中\n- 默认保留最近 1000 条记录\n- 收藏的记录永久保留\n- 图片最大 5MB\n\n## 技术实现\n\n- **前端**：React + TypeScript + Tailwind CSS\n- **后端**：Node.js + SQLite\n- **剪贴板监听**：Native Addon（零性能开销）\n- **主题**：自动跟随系统主题\n\n## 开发\n\n### 安装依赖\n\n```bash\nnpm install\n```\n\n### 开发模式\n\n```bash\nnpm run dev\n```\n\n### 构建\n\n```bash\nnpm run build\n```\n\n### 打包\n\n```bash\nnpm run pack\n```\n\n## 许可证\n\nMIT License",
       "icon": {
         "type": "url",
@@ -92,7 +92,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "9bdecfb30e669a006845558968923060389736d24acff9e4adf728207c52b541",
+      "sha256": "16eb4cf1585d59ef3afa1574c78da80894c74d72ec81eb30a00a8ed6a921a370",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/clipboard-history"
     },
@@ -104,7 +104,7 @@
       "author": "Mulby",
       "description": "HEX、RGB、HSL 颜色格式互转，支持颜色预览和取色",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/color-converter-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:25.700Z",
+      "lastPackageTime": "2026-03-15T05:05:22.048Z",
       "icon": {
         "type": "url",
         "value": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/plugins/color-converter/<svg viewBox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z\"/></svg>"
@@ -115,7 +115,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "92b2167a3a2c7e55a0a8628039235f49678b375c571b7fe646f5f4a00358a307",
+      "sha256": "ee75f5ab7d2066b5c0c6d1ee32754134e6230e0dde4c62fc49290e3079fec249",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/color-converter"
     },
@@ -127,7 +127,7 @@
       "author": "Mulby",
       "description": "插件描述",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/color_helper-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:28.662Z",
+      "lastPackageTime": "2026-03-15T05:05:25.458Z",
       "details": "# 🎨 颜色助手 (color_helper)\n\n一个功能丰富的颜色工具插件，支持颜色解析、图片色卡提取、UI色卡、传统色、渐变色和收藏功能。\n\n## ✨ 功能特性\n\n### 1. **颜色解析**\n- 支持 HEX 颜色格式解析（如 `#FF6B6B`）\n- 支持 RGB 颜色格式解析（如 `rgb(255, 107, 107)`）\n- 实时显示颜色预览\n- 一键复制 HEX、RGB、HSL 格式\n- 支持添加到收藏\n\n### 2. **图片色卡**\n- 上传图片自动提取主色调\n- 显示每种颜色的占比百分比\n- 一键复制提取的颜色值\n- 支持常见图片格式（JPG、PNG、GIF、WebP、BMP）\n\n### 3. **UI色卡**\n- 常用 UI 设计颜色库\n- 包含主色、辅色、状态色等\n- 每种颜色附带使用场景说明\n- 一键复制颜色值\n\n### 4. **传统色**\n- 中国传统颜色库\n- 包含朱红、胭脂、石青等经典颜色\n- 显示颜色名称、拼音、朝代信息\n- 一键复制颜色值\n\n### 5. **渐变色**\n- 预设精美渐变色方案\n- 显示渐变 CSS 代码\n- 支持收藏喜欢的渐变色\n- 一键复制渐变 CSS\n\n### 6. **收藏功能**\n- 收藏喜欢的颜色和渐变色\n- 统一管理所有收藏内容\n- 支持从收藏中移除\n\n## 🚀 使用方法\n\n### 安装插件\n1. 将插件文件夹放置在 Mulby 的插件目录中\n2. 重启 Mulby 或刷新插件列表\n3. 启用 \"color_helper\" 插件\n\n### 使用方式\n1. **通过关键词触发**：\n   - 输入 `color` 打开颜色解析工具\n   - 输入 `image colors` 打开图片色卡工具\n   - 输入 `ui colors` 查看 UI 色卡\n   - 输入 `traditional colors` 查看传统色\n   - 输入 `gradient` 打开渐变色工具\n   - 输入 `color favorites` 查看收藏\n\n2. **直接输入颜色值**：\n   - 输入 HEX 颜色（如 `#FF6B6B`）自动解析\n   - 输入 RGB 颜色（如 `rgb(255, 107, 107)`）自动解析\n\n3. **拖拽图片文件**：\n   - 拖拽图片文件到输入框自动提取颜色\n\n## 🎯 快捷键功能\n\n插件注册了以下触发方式：\n- **关键词触发**：color, image colors, ui colors, traditional colors, gradient, color favorites\n- **正则匹配**：自动识别 HEX 和 RGB 颜色格式\n- **图片文件**：支持常见图片格式\n\n## 🛠️ 技术实现\n\n- **前端框架**：React 18 + TypeScript\n- **构建工具**：Vite + esbuild\n- **样式方案**：CSS 变量支持亮色/暗色主题\n- **插件架构**：遵循 Mulby 插件规范\n\n## 📁 项目结构\n\n```\ncolor_helper/\n├── src/\n│   ├── main.ts              # 插件主入口，功能注册\n│   ├── ui/\n│   │   ├── App.tsx          # 主界面组件\n│   │   ├── main.tsx         # UI 入口\n│   │   ├── styles.css       # 样式文件\n│   │   └── hooks/\n│   │       └── useMulby.ts # Mulby API Hook\n├── dist/                    # 构建输出目录\n├── ui/                      # UI 构建输出目录\n├── package.json\n├── vite.config.ts\n└── README.md\n```\n\n## 🔧 开发说明\n\n### 安装依赖\n```bash\nnpm install\n```\n\n### 开发模式\n```bash\nnpm run dev\n```\n\n### 构建插件\n```bash\nnpm run build\n```\n\n### 打包插件\n```bash\nnpm run pack\n```\n\n## 🎨 设计特点\n\n1. **响应式设计**：适配不同屏幕尺寸\n2. **主题支持**：自动跟随系统亮色/暗色主题\n3. **用户体验**：直观的界面设计和流畅的交互\n4. **性能优化**：懒加载和虚拟滚动支持\n\n## 📝 更新日志\n\n### v1.0.0\n- 初始版本发布\n- 实现所有核心功能\n- 支持颜色解析、图片色卡、UI色卡、传统色、渐变色、收藏功能\n\n## 🤝 贡献指南\n\n欢迎提交 Issue 和 Pull Request 来改进这个插件！\n\n## 📄 许可证\n\nMIT License",
       "icon": {
         "type": "url",
@@ -139,7 +139,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "06a26d0f32b7a29036dc62bba55a831623a877233324520cac8c568b746bea88",
+      "sha256": "dc46f64f94cd9c5ec86e5b633873bd120e9c2449df6b5a28b942ee7c89332f90",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/color_helper"
     },
@@ -151,12 +151,12 @@
       "author": "Mulby",
       "description": "将输入的数字金额转换为人民币大写形式",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/currency-converter-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:29.656Z",
+      "lastPackageTime": "2026-03-15T05:05:26.598Z",
       "icon": {
         "type": "url",
         "value": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/plugins/currency-converter/icon.png"
       },
-      "sha256": "634a3291471be00116ca3671446aa872149fa6cfe71c9627d7a0a52b8ca93e5c",
+      "sha256": "ea2ed1229ff02c75c9c5cc4f9bbb05fffc5acec91fa1c0ee2daf0ea56e414faf",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/currency-converter"
     },
@@ -168,7 +168,7 @@
       "author": "Mulby",
       "description": "编码小助手 - 集合时间转换、base64编解码、URL编解码、哈希加密、Unicode、UUID、进制转换、HTML转义",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/encode_helper-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:32.487Z",
+      "lastPackageTime": "2026-03-15T05:05:29.755Z",
       "details": "# 编码小助手 (encode_helper)\n\n一个功能全面的编码转换工具插件，集成了8大常用编码转换功能。\n\n## ✨ 核心功能\n\n### 1. ⏰ 时间转换\n- 时间戳 ↔ 日期时间相互转换\n- 支持秒级和毫秒级时间戳\n- 自动识别输入格式\n\n### 2. 🔢 Base64编解码\n- **加密（编码）**：将文本转换为Base64格式\n- **解密（解码）**：将Base64还原为原文本\n- 支持中文字符处理\n- 独立的加密和解密按钮\n\n### 3. 🔗 URL编解码\n- **编码**：将文本转换为URL编码格式\n- **解码**：将URL编码还原为原文本\n- 处理特殊字符和中文\n- 独立的编码和解码按钮\n\n### 4. 🔐 哈希加密\n- 支持多种哈希算法：MD5、SHA1、SHA256、SHA512\n- 使用Web Crypto API实现\n- 实时计算哈希值\n\n### 5. 🔤 Unicode转换\n- **编码**：将文本转换为Unicode格式（\\uXXXX）\n- **解码**：将Unicode还原为原文本\n- 独立的编码和解码按钮\n\n### 6. 🆔 UUID生成\n- 生成标准UUID v4\n- 一键生成并复制\n- 符合RFC 4122标准\n\n### 7. 🔢 进制转换\n- 二进制、八进制、十进制、十六进制相互转换\n- 灵活选择源进制和目标进制\n- 自动识别输入格式\n\n### 8. 📄 HTML转义\n- **编码**：将HTML特殊字符转换为实体\n- **解码**：将HTML实体还原为原字符\n- 独立的编码和解码按钮\n\n## 🚀 使用方法\n\n### 安装步骤\n1. 将插件文件夹复制到Mulby的插件目录\n2. 重启Mulby或重新加载插件\n3. 在插件管理中启用\"编码小助手\"\n\n### 触发方式\n在Mulby主界面输入以下任意关键词：\n- `时间转换`、`timestamp`\n- `base64`、`base64编码`、`base64解码`\n- `url编码`、`url解码`\n- `哈希`、`md5`、`sha1`、`sha256`\n- `unicode`、`unicode编码`、`unicode解码`\n- `uuid`、`生成uuid`\n- `进制转换`、`二进制`、`十六进制`\n- `html转义`、`html编码`、`html解码`\n\n### 界面操作\n1. 通过顶部标签页切换功能\n2. 在输入框输入内容\n3. 点击对应的操作按钮：\n   - **Base64**：点击\"加密\"或\"解密\"按钮\n   - **URL**：点击\"编码\"或\"解码\"按钮\n   - **Unicode**：点击\"编码\"或\"解码\"按钮\n   - **HTML**：点击\"编码\"或\"解码\"按钮\n   - 其他功能：点击\"转换\"按钮\n4. 结果自动复制到剪贴板\n\n## 🎯 特色功能\n\n### 智能识别\n- 自动检测输入内容类型\n- 智能选择编码或解码方向\n- 实时转换和反馈\n\n### 用户友好界面\n- 直观的标签页设计\n- 独立的操作按钮，避免混淆\n- 一键复制结果\n- 支持亮色/暗色主题\n- 响应式设计\n\n### 性能优化\n- 使用React构建高效UI\n- 异步哈希计算\n- 内存友好的处理方式\n\n## 📁 文件结构\n\n```\nencode_helper/\n├── dist/main.js                    # 构建后的主程序\n├── ui/                            # 构建后的UI文件\n├── src/                           # 源代码\n│   ├── main.ts                    # 插件主逻辑\n│   └── ui/                        # 用户界面\n│       ├── App.tsx                # 主组件（已更新）\n│       ├── styles.css             # 样式文件\n│       ├── main.tsx               # UI入口\n│       └── hooks/useMulby.ts    # Mulby API封装\n├── manifest.json                  # 插件清单\n├── plugin.json                    # 插件配置\n├── package.json                   # 项目配置\n├── README.md                      # 使用说明\n├── INSTALL.md                     # 安装指南\n├── SUMMARY.md                     # 项目总结\n└── test_base64.html               # Base64功能测试页面\n```\n\n## 🔧 开发说明\n\n### 技术栈\n- **前端**: React 18 + TypeScript\n- **构建工具**: Vite + esbuild\n- **样式**: CSS变量 + 响应式设计\n- **API**: Mulby插件API\n\n### 构建命令\n```bash\n# 安装依赖\nnpm install\n\n# 开发模式\nnpm run dev\n\n# 构建插件\nnpm run build\n\n# 打包插件\nnpm run pack\n```\n\n### 扩展功能\n如需添加新功能：\n1. 在`src/main.ts`中注册新功能\n2. 在`src/ui/App.tsx`中添加处理逻辑\n3. 更新UI界面和样式\n4. 更新配置文件\n\n## 🆕 更新说明\n\n### v1.1.0 (最新)\n- **Base64页面改进**：添加独立的\"加密\"和\"解密\"按钮\n- **URL页面改进**：添加独立的\"编码\"和\"解码\"按钮\n- **Unicode页面改进**：添加独立的\"编码\"和\"解码\"按钮\n- **HTML页面改进**：添加独立的\"编码\"和\"解码\"按钮\n- 优化用户界面，减少操作混淆\n- 增强错误处理\n\n### v1.0.0\n- 初始版本发布\n- 实现8大核心功能\n- 支持自动识别和转换\n\n## 📋 兼容性\n- **Mulby版本**: 最新版本\n- **操作系统**: Windows 10+, macOS 10.15+, Linux\n- **浏览器**: 现代浏览器（Chrome 90+, Firefox 88+, Safari 14+）\n\n## 📄 许可证\nMIT License - 可自由使用、修改和分发\n\n## 🤝 贡献指南\n欢迎提交Issue和Pull Request来改进插件功能。\n\n## 📞 支持\n如有问题或建议，请通过以下方式联系：\n1. 在GitHub仓库提交Issue\n2. 查看详细文档\n3. 参考测试页面验证功能\n\n---\n\n**编码小助手** - 让编码转换变得更简单！",
       "icon": {
         "type": "url",
@@ -180,7 +180,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "ccd0c750bb087c82d5021ac2165b5a8b4ac0cf96b02a5780ea68c367794d96b1",
+      "sha256": "b47d512fbe575cddf1a1785859729c4b5b998ebb1514b0f93143708e74c5230c",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/encode_helper"
     },
@@ -192,7 +192,7 @@
       "author": "Mulby",
       "description": "Text encoding converter (UTF-8, GBK), Base64/Hex transport, URL encoding, and Huffman compression visualizer.",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/encoding-converter-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:35.638Z",
+      "lastPackageTime": "2026-03-15T05:05:33.278Z",
       "details": "# 测试",
       "icon": {
         "type": "url",
@@ -204,7 +204,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "8c496a17856612c9ce8bf241b9b7e819b3b6155bc5500387fbc042ae68f463ff",
+      "sha256": "a0bbc724b20ea0b86349ead15d263f9948ee0b1856906e7b1f743418d24d8de3",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/encoding-converter"
     },
@@ -216,7 +216,7 @@
       "author": "Mulby",
       "description": "将多张图片任意纵向裁切后拼接成一张长图",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/image_stitching-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:38.422Z",
+      "lastPackageTime": "2026-03-15T05:05:36.454Z",
       "details": "# 长图拼接插件 (image_stitching)\n\n一个功能强大的图片拼接插件，可以将多张图片任意纵向裁切后拼接成一张长图。\n\n## 功能特性\n\n- 🖼️ **多图片支持**：支持同时处理多张图片\n- ✂️ **精确裁切**：每张图片可独立设置顶部和底部裁切比例\n- 🔄 **灵活排序**：可调整图片的拼接顺序\n- ⚙️ **自定义设置**：可设置输出宽度、图片间距和背景颜色\n- 📋 **便捷导出**：支持复制到剪贴板和下载图片\n- 🎨 **主题适配**：支持亮色和暗色主题\n\n## 支持的图片格式\n\n- PNG\n- JPEG/JPG\n- GIF\n- WebP\n- BMP\n\n## 触发方式\n\n- `图片拼接` - 打开图片拼接界面\n- `image stitch` - Open image stitching interface\n- 直接拖放图片文件到插件\n\n## 开发\n\n### 安装依赖\n\n```bash\nnpm install\n```\n\n### 开发模式\n\n```bash\nnpm run dev\n```\n\n### 构建\n\n```bash\nnpm run build\n```\n\n### 打包\n\n```bash\nnpm run pack\n```\n\n## 项目结构\n\n```\nimage_stitching/\n├── manifest.json              # 插件配置\n├── package.json\n├── src/\n│   ├── main.ts                # 后端入口\n│   ├── ui/\n│   │   ├── App.tsx            # 主应用\n│   │   ├── main.tsx           # UI 入口\n│   │   ├── index.html         # HTML 模板\n│   │   ├── styles.css         # 全局样式\n│   │   ├── hooks/\n│   │   │   └── useMulby.ts  # Mulby API Hook\n│   │   └── types/\n│   │       └── mulby.d.ts   # 类型定义\n├── dist/                      # 后端构建输出\n├── ui/                        # UI 构建输出\n└── icon.png                   # 插件图标\n```\n\n## 许可证\n\nMIT License",
       "icon": {
         "type": "url",
@@ -228,7 +228,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "b5e7499fe26c87c2d0dc6fdfbe7295f7bd8a710a9e031c78132b8865780fb0fa",
+      "sha256": "f6cb4aa70da58f9e16add834c6e145271c9e0de1997dfd744a4c21c5ceb89b8a",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/image_stitching"
     },
@@ -240,7 +240,7 @@
       "author": "Mulby",
       "description": "查询本机IP和任意IP的地理位置信息",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/ip_look-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:42.091Z",
+      "lastPackageTime": "2026-03-15T05:05:40.543Z",
       "details": "# ip_look\n\nIP 查询插件，用于查询本机 IP 和任意 IP 的地理位置信息。\n\n## 功能特性\n\n- 获取本机公网 IP 及其地理位置信息\n- 查询任意 IP 地址的详细信息（国家、城市、运营商、经纬度等）\n- 一键复制查询结果字段\n- iOS 玻璃拟态风格 UI，支持明暗主题切换\n- 免费 API 服务，无需配置\n\n## 触发方式\n\n- 在 Mulby 主界面输入 `ip_look` 打开插件\n- 直接输入 IP 地址（如 `8.8.8.8`）后按 Tab 键切换到插件（需配置）\n\n## 开发\n\n### 安装依赖\n\n```bash\nnpm install\n```\n\n### 开发模式\n\n```bash\nnpm run dev\n```\n\n### 构建\n\n```bash\nnpm run build\n```\n\n### 打包\n\n```bash\nnpm run pack\n```\n\n## 项目结构\n\n```\nip_look/\n├── manifest.json              # 插件配置\n├── package.json\n├── src/\n│   ├── main.ts                # 后端入口\n│   ├── ui/\n│   │   ├── App.tsx            # 主应用\n│   │   ├── main.tsx           # UI 入口\n│   │   ├── index.html         # HTML 模板\n│   │   ├── styles.css         # 全局样式\n│   │   ├── hooks/\n│   │   │   └── useMulby.ts  # Mulby API Hook\n│   │   └── types/\n│   │       └── mulby.d.ts   # 类型定义\n├── dist/                      # 后端构建输出\n├── ui/                        # UI 构建输出\n└── icon.png                   # 插件图标\n```\n\n## 许可证\n\nMIT License",
       "icon": {
         "type": "url",
@@ -252,7 +252,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "323f832743ebc460974d94e4210ffc16c7b172f30541401deb6b005c7a6a3ea4",
+      "sha256": "36c40ee0a4778da05f9638467900e7517dd7d8fc7da24533601b3d0c839c5c69",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/ip_look"
     },
@@ -264,7 +264,7 @@
       "author": "Mulby",
       "description": "强大的 JSON 编辑工具，支持格式化、压缩、校验、转换、树形编辑和过滤",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/json_editor-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:49.217Z",
+      "lastPackageTime": "2026-03-15T05:05:47.875Z",
       "details": "# JSON 编辑器\n\n强大的 JSON 编辑工具，支持格式化、压缩、校验、转换、树形编辑和过滤。集成 CodeMirror 6 代码编辑器，提供专业的编辑体验。\n\n## 功能特性\n\n### ✨ 核心功能\n\n- **专业代码编辑器** - 集成 CodeMirror 6，提供语法高亮、代码折叠、自动补全等功能\n- **JSON 格式化** - 美化 JSON 数据，使其更易读\n- **JSON 压缩** - 去除空格和换行，压缩 JSON 体积\n- **语法校验** - 实时检测 JSON 语法错误，并标记错误位置\n- **多格式支持**\n  - JSON - 标准 JSON 格式\n  - YAML - 自动转换 YAML 为 JSON\n  - XML - 自动转换 XML 为 JSON\n\n### 🔄 格式转换\n\n- **JSON → YAML** - 将 JSON 转换为 YAML 格式\n- **JSON → XML** - 将 JSON 转换为 XML 格式\n- **YAML → JSON** - 自动识别并转换 YAML 输入\n- **XML → JSON** - 自动识别并转换 XML 输入\n\n### 🌲 树形视图\n\n- 可折叠/展开的树形结构\n- 显示数组长度和对象键数量\n- 语法高亮（键名、字符串、数字、布尔值、null）\n- 支持深层嵌套数据\n\n### 🔍 高级功能\n\n- **JavaScript 过滤** - 使用 JavaScript 表达式快速过滤和处理 JSON 数据\n  - 示例: `data.filter(x => x.age > 18)` - 过滤数组\n  - 示例: `data.users` - 提取特定字段\n  - 示例: `data.map(x => x.name)` - 映射数组\n\n### 🎨 界面特性\n\n- **CodeMirror 6 编辑器** - 专业的代码编辑体验\n- **亮色/暗色主题** - 自动跟随系统主题\n- **实时预览** - 输入即时解析和显示\n- **一键复制** - 快速复制处理后的结果\n- **响应式布局** - 自适应窗口大小\n\n## 触发方式\n\n### 1. 关键词触发\n在 Mulby 搜索框输入 `json` 即可打开插件\n\n### 2. JSON 数据自动识别\n直接在搜索框粘贴 JSON 数据（以 `{` 或 `[` 开头），自动识别并打开插件\n\n示例：\n```json\n{\"name\": \"张三\", \"age\": 25}\n```\n\n```json\n[1, 2, 3, 4, 5]\n```\n\n### 3. YAML 数据自动识别\n直接粘贴 YAML 数据，自动转换为 JSON\n\n示例：\n```yaml\nname: 张三\nage: 25\ncity: 北京\n```\n\n### 4. XML 数据自动识别\n直接粘贴 XML 数据，自动转换为 JSON\n\n示例：\n```xml\n<user>\n  <name>张三</name>\n  <age>25</age>\n</user>\n```\n\n## 使用示例\n\n### 格式化 JSON\n1. 在编辑器中输入或粘贴压缩的 JSON\n2. 点击底部的 \"✨ 格式化\" 按钮\n3. JSON 会自动美化\n\n### 压缩 JSON\n1. 在编辑器中输入或粘贴格式化的 JSON\n2. 点击底部的 \"🗜️ 压缩\" 按钮\n3. JSON 会被压缩为单行\n\n### 使用过滤功能\n假设有以下 JSON 数据：\n```json\n{\n  \"users\": [\n    {\"name\": \"张三\", \"age\": 25, \"city\": \"北京\"},\n    {\"name\": \"李四\", \"age\": 30, \"city\": \"上海\"},\n    {\"name\": \"王五\", \"age\": 20, \"city\": \"广州\"}\n  ]\n}\n```\n\n在底部过滤框输入：\n- `data.users` - 提取 users 数组\n- `data.users.filter(x => x.age > 25)` - 筛选年龄大于 25 的用户\n- `data.users.map(x => x.name)` - 提取所有用户名\n- `data.users.find(x => x.city === \"上海\")` - 查找上海的用户\n\n### 查看树形视图\n1. 在编辑器中输入 JSON 数据\n2. 点击底部的 \"🌲 树形视图\" 按钮\n3. 右侧会显示可折叠的树形结构\n\n### 转换格式\n1. 在编辑器中输入 JSON 数据\n2. 点击底部的转换按钮：\n   - \"📄 转 YAML\" - 转换为 YAML 格式\n   - \"📋 转 XML\" - 转换为 XML 格式\n3. 右侧会显示转换后的结果\n4. 点击 \"📋 复制\" 按钮复制结果\n\n### 从 YAML/XML 转换\n1. 在 Mulby 搜索框直接粘贴 YAML 或 XML 数据\n2. 插件会自动识别格式并转换为 JSON\n3. 转换后的 JSON 会显示在编辑器中\n\n## 开发\n\n### 安装依赖\n\n```bash\nnpm install\n```\n\n### 开发模式\n\n```bash\nnpm run dev\n```\n\n### 构建\n\n```bash\nnpm run build\n```\n\n### 打包\n\n```bash\nnpm run pack\n```\n\n## 项目结构\n\n```\njson_editor/\n├── manifest.json              # 插件配置\n├── package.json               # npm 配置\n├── src/\n│   ├── main.ts                # 后端入口\n│   ├── ui/\n│   │   ├── App.tsx            # 主应用组件\n│   │   ├── main.tsx           # React 入口\n│   │   ├── index.html         # HTML 模板\n│   │   ├── styles.css         # 全局样式\n│   │   ├── components/\n│   │   │   └── CodeEditor.tsx # CodeMirror 编辑器组件\n│   │   ├── utils/\n│   │   │   └── formatConverter.ts # 格式转换工具\n│   │   └── hooks/\n│   │       └── useMulby.ts  # Mulby API Hook\n│   └── types/\n│       └── mulby.d.ts       # 类型定义\n├── dist/                      # 后端构建输出\n├── ui/                        # UI 构建输出\n└── icon.png                   # 插件图标\n```\n\n## 技术栈\n\n- **前端框架**: React 18 + TypeScript\n- **代码编辑器**: CodeMirror 6\n- **构建工具**: Vite + esbuild\n- **转换库**:\n  - js-yaml - JSON ↔ YAML 转换\n  - fast-xml-parser - JSON ↔ XML 转换\n- **样式**: CSS Variables (支持主题切换)\n\n## 特性说明\n\n### CodeMirror 6 编辑器\n\n集成了专业的 CodeMirror 6 代码编辑器，提供：\n- 语法高亮\n- 代码折叠\n- 自动补全\n- 括号匹配\n- 行号显示\n- 搜索和替换\n- 多光标编辑\n- 撤销/重做\n\n### 格式自动检测\n\n插件会自动检测输入数据的格式：\n- 以 `{` 或 `[` 开头 → JSON\n- 以 `<` 开头 → XML\n- 包含 `:` 且不是 JSON → YAML\n\n检测到非 JSON 格式时，会自动转换为 JSON 并显示在编辑器中。\n\n### XML 转换优化\n\n使用 `fast-xml-parser` 替代 `xml-js`，解决了 Buffer 兼容性问题，支持：\n- 属性保留（使用 `@_` 前缀）\n- 文本节点保留（使用 `#text` 键名）\n- 自动类型转换\n- 格式化输出\n\n## 许可证\n\nMIT License",
       "icon": {
         "type": "url",
@@ -276,7 +276,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "a6d9b8aa5472ff1f63529748c27fa11f23744313804eaf191c35b5514843f879",
+      "sha256": "503e4981dcd5bfaeeb9ef6ca6c377703f390894e28c63fa30a9122ed996aa953",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/json_editor"
     },
@@ -288,7 +288,7 @@
       "author": "Mulby",
       "description": "专业的房贷计算器，支持商贷、公积金贷款、组合贷款计算，包含还款计划表、提前还款计算、利率对比等功能",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/mortgage_calculator-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:06:57.115Z",
+      "lastPackageTime": "2026-03-15T05:05:57.207Z",
       "details": "# 房贷计算器 Mulby 插件\n\n一个功能强大的房贷计算器插件，支持商业贷款、公积金贷款和组合贷款计算。\n\n## 功能特性\n\n### 核心功能\n- **三种贷款类型**：商业贷款、公积金贷款、组合贷款\n- **还款方式**：等额本息、等额本金\n- **输入参数**：贷款金额、年利率、贷款期限\n\n### 高级功能\n- **提前还款计算器**：支持部分提前还款和一次性还清\n- **利率对比**：多家银行利率对比\n- **贷款能力评估**：根据收入计算可贷金额\n- **还款计划表**：详细的月度还款计划\n- **图表可视化**：还款进度、利息构成等图表\n\n### 设计特点\n- **iOS 26 玻璃态设计**：采用最新的neumorphic玻璃效果\n- **响应式布局**：适配不同屏幕尺寸\n- **深色/浅色模式**：自动跟随系统主题\n- **数据导出**：支持导出为Excel/PDF格式\n\n## 安装与使用\n\n### 安装依赖\n```bash\nnpm install\n```\n\n### 开发模式\n```bash\nnpm run dev\n```\n\n### 构建插件\n```bash\nnpm run build\n```\n\n### 部署到Mulby\n1. 构建插件：`npm run build`\n2. 将生成的`ui`文件夹和`manifest.json`、`icon.png`打包\n3. 上传到Mulby插件商店\n\n## 项目结构\n\n```\n├── src/\n│   ├── main.ts              # 插件后端入口\n│   ├── types/               # TypeScript类型定义\n│   ├── ui/                  # 前端界面\n│   │   ├── App.tsx          # 主组件\n│   │   ├── main.tsx         # 前端入口\n│   │   ├── index.html       # HTML模板\n│   │   ├── styles.css       # 样式文件\n│   │   └── hooks/           # React Hooks\n│   └── utils/               # 工具函数\n│       └── calculator.ts    # 计算器核心逻辑\n├── manifest.json            # 插件配置\n├── package.json             # 项目依赖\n├── vite.config.ts           # 构建配置\n└── README.md                # 说明文档\n```\n\n## 技术栈\n\n- **前端**：React 18 + TypeScript\n- **构建工具**：Vite\n- **图表库**：Recharts\n- **样式**：CSS3 + 自定义玻璃态效果\n- **后端**：Node.js HTTP Server\n\n## 计算器算法\n\n### 等额本息\n每月还款额 = [贷款本金 × 月利率 × (1+月利率)^还款月数] ÷ [(1+月利率)^还款月数-1]\n\n### 等额本金\n每月还款额 = (贷款本金 ÷ 还款月数) + (本金 - 已归还本金累计额) × 月利率\n\n### 提前还款计算\n支持多种提前还款方式：\n1. 部分提前还款（减少月供）\n2. 部分提前还款（缩短期限）\n3. 一次性还清\n\n## 配置说明\n\n### manifest.json\n```json\n{\n  \"id\": \"mortgage-calculator\",\n  \"name\": \"房贷计算器\",\n  \"version\": \"1.0.0\",\n  \"description\": \"专业的房贷计算工具\",\n  \"author\": \"Your Name\",\n  \"icon\": \"icon.png\",\n  \"entry\": \"main.ts\",\n  \"permissions\": [\"storage\", \"clipboard\"]\n}\n```\n\n## 开发指南\n\n### 添加新的贷款类型\n1. 在`src/types/index.ts`中定义新的贷款类型\n2. 在`src/utils/calculator.ts`中添加对应的计算函数\n3. 在`src/ui/App.tsx`中添加UI组件\n\n### 自定义主题\n修改`src/ui/styles.css`中的CSS变量：\n```css\n:root {\n  --primary-color: #007AFF;\n  --glass-bg: rgba(255, 255, 255, 0.1);\n  --shadow-color: rgba(0, 0, 0, 0.1);\n}\n```\n\n## 性能优化\n\n- **代码分割**：按需加载图表组件\n- **缓存策略**：计算结果本地存储\n- **防抖处理**：输入框实时计算优化\n- **虚拟滚动**：大量数据表格优化\n\n## 测试\n\n```bash\n# 运行单元测试\nnpm test\n\n# 运行E2E测试\nnpm run test:e2e\n```\n\n## 贡献指南\n\n1. Fork 项目\n2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)\n3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)\n4. 推送到分支 (`git push origin feature/AmazingFeature`)\n5. 开启 Pull Request\n\n## 许可证\n\nMIT License\n\n## 支持与反馈\n\n如有问题或建议，请提交Issue或联系开发者。\n\n---\n\n**注意**：本计算器提供的结果仅供参考，实际贷款条件以银行最终审批为准。",
       "icon": {
         "type": "url",
@@ -300,7 +300,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "fb9a4ec3aee2a9a0ea2d1cb7950016140bb4ad62e40de0cac4346e8e26649488",
+      "sha256": "40154725f65e14974a6922de019a34b4a4fb86e64251024de6f149565642fc21",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/mortgage_calculator"
     },
@@ -312,7 +312,7 @@
       "author": "Mulby",
       "description": "综合展示 Mulby 所有 API 能力的示例插件，涵盖系统信息、剪贴板、文件管理、网络、屏幕捕获、媒体、高级设置和安全存储等功能",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/mulby-showcase-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:07:00.155Z",
+      "lastPackageTime": "2026-03-15T05:06:00.682Z",
       "details": "# Mulby Showcase\n\n**综合展示 Mulby 所有 API 能力的示例插件**\n\n![Mulby Showcase](./icon.png)\n\n## 功能特性\n\n这个插件是 Mulby 平台的完整功能展示，涵盖了所有 20+ 个 API 模块：\n\n| 模块 | 涵盖的 API | 功能描述 |\n|------|-----------|---------|\n| 📊 **系统信息** | system, power, geolocation, network | 系统/应用信息、电源状态、位置信息、网络状态 |\n| 📋 **剪贴板** | clipboard, notification | 剪贴板读写、格式检测、图片和文件支持 |\n| ⌨️ **输入控制** | input | 隐藏主窗口后粘贴文本/图片/文件或模拟键入 |\n| 📁 **文件管理** | filesystem, dialog, shell | 文件操作、对话框、系统打开、Finder 定位 |\n| 🌐 **网络与HTTP** | http, network | HTTP 请求测试、网络状态监控 |\n| 🖥️ **屏幕与捕获** | screen, media, window | 显示器信息、区域截图、多窗口协作、媒体权限 |\n| 🔊 **媒体与音频** | tts, shell | 语音合成、系统提示音 |\n| ⚙️ **高级设置** | theme, window, shortcut, tray, menu | 主题切换、窗口控制、快捷键、托盘、菜单 |\n| 🔐 **安全与存储** | security, storage | 加密存储、数据持久化 |\n\n## 触发方式\n\n插件支持多种触发关键词：\n\n- `showcase` / `demo` / `示例` - 打开功能展示面板\n- `sysinfo` / `系统信息` - 直接进入系统信息模块\n- `cb` / `剪贴板` - 直接进入剪贴板管理\n- `input` / `输入` - 直接进入输入控制\n- `files` / `文件` - 直接进入文件管理\n- `http` / `网络` - 直接进入网络测试\n- `screenshot` / `截图` / `screen` - 直接进入截图功能\n- `tts` / `语音` / `朗读` - 直接进入语音合成\n- `settings` / `设置` - 直接进入高级设置\n\n## 开发\n\n### 安装依赖\n\n```bash\nnpm install\n```\n\n### 开发模式\n\n```bash\nnpm run dev\n```\n\n### 构建\n\n```bash\nnpm run build\n```\n\n### 打包\n\n```bash\nnpm run pack\n```\n\n## 项目结构\n\n```\nmulby-showcase/\n├── manifest.json              # 插件配置\n├── package.json\n├── src/\n│   ├── main.ts                # 后端入口\n│   └── ui/\n│       ├── App.tsx            # 主应用\n│       ├── styles.css         # 全局样式\n│       ├── components/        # 通用组件\n│       │   ├── Sidebar.tsx\n│       │   ├── PageHeader.tsx\n│       │   ├── Card.tsx\n│       │   ├── Button.tsx\n│       │   ├── StatusBadge.tsx\n│       │   └── CodeBlock.tsx\n│       ├── hooks/             # 自定义 Hooks\n│       │   ├── useTheme.ts\n│       │   ├── useNotification.ts\n│       │   └── useMulby.ts\n│       └── modules/           # 功能模块\n│           ├── SystemInfo/\n│           ├── Clipboard/\n│           ├── Input/\n│           ├── FileManager/\n│           ├── Network/\n│           ├── Screen/\n│           ├── Media/\n│           ├── Settings/\n│           └── Security/\n├── dist/                      # 后端构建输出\n└── ui/                        # UI 构建输出\n```\n\n## API 覆盖\n\n此插件完整展示了 Mulby 的以下 API：\n\n### 基础 API\n- ✅ `clipboard` - 剪贴板操作\n- ✅ `input` - 输入与粘贴模拟\n- ✅ `notification` - 系统通知\n- ✅ `storage` - 数据存储\n- ✅ `window` - 窗口控制\n- ✅ `http` - HTTP 请求\n- ✅ `filesystem` - 文件系统\n\n### 系统 API\n- ✅ `theme` - 主题管理\n- ✅ `screen` - 屏幕信息与截图\n- ✅ `shell` - 系统操作\n- ✅ `dialog` - 对话框\n- ✅ `system` - 系统信息\n- ✅ `power` - 电源状态\n\n### 高级 API\n- ✅ `shortcut` - 全局快捷键\n- ✅ `security` - 加密存储\n- ✅ `media` - 媒体权限\n- ✅ `tray` - 系统托盘\n- ✅ `network` - 网络状态\n- ✅ `menu` - 右键菜单\n- ✅ `geolocation` - 地理位置\n- ✅ `tts` - 语音合成\n- ✅ `window` - 多窗口管理 (create/show/close)\n\n## 典型案例：区域截图与编辑流程\n\n本项目实现了一个经典的\"区域截图 -> 独立窗口编辑 -> 回传主窗口\"的工作流，展示了多窗口协作与数据传递的最佳实践。\n\n```mermaid\nsequenceDiagram\n    participant U as 用户\n    participant Main as 主窗口(Screen模块)\n    participant IPC as 主进程\n    participant Overlay as 截图覆盖层\n    participant Editor as 图片编辑器\n\n    U->>Main: 点击\"区域截图\"\n    Main->>IPC: 调用 screen.screenCapture()\n    Note over Main: 主窗口自动隐藏(失焦)\n    \n    IPC->>Overlay: 创建全屏透明窗口\n    U->>Overlay: 拖拽选择区域\n    Overlay->>IPC: 完成选择\n    IPC->>Overlay: 关闭覆盖层\n    IPC->>Main: 返回截图数据(Base64)\n    \n    Main->>Editor: window.create('/image-editor')\n    Note right of Main: 使用 BroadcastChannel 建立连接\n    \n    Editor-->>Main: 发送 READY 消息\n    Main->>Editor: 发送 INIT_IMAGE (原图)\n    \n    U->>Editor: 绘制/编辑图片\n    U->>Editor: 点击\"确认使用\"\n    \n    Editor->>Main: 发送 SAVE_IMAGE (编辑后图片)\n    Editor->>Editor: 关闭窗口\n    \n    Main->>Main: 更新预览区域\n    Main->>Main: window.show() 恢复显示\n```\n\n### 关键技术点\n\n1.  **多窗口管理**：使用 `window.mulby.window.create` 创建独立的编辑器窗口，互不干扰。\n2.  **窗口通信**：使用 Web 标准 `BroadcastChannel` 实现主窗口与编辑器窗口的直接通信，无需经过主进程中转，高效且低延迟。\n3.  **可见性控制**：利用 `window.show()` 确保截图流程结束后主窗口能正确恢复显示。\n\n## 许可证\n\nMIT License",
       "icon": {
         "type": "url",
@@ -324,7 +324,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "9785c05e81225ac2571c2e6863567b1586f813e0796dd3832e336785ad10b925",
+      "sha256": "01ce06dfdd2ef7fff6a49f900f2ae26e9ce8599ad041e5888301e506ac17f1f6",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/mulby-showcase"
     },
@@ -336,7 +336,7 @@
       "author": "Mulby",
       "description": "插件描述",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/password-manager-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:07:06.581Z",
+      "lastPackageTime": "2026-03-15T05:06:08.327Z",
       "details": "# Password Manager - Mulby Plugin\n\n一个安全、本地存储的个人密码管理插件。\n\n## 🔐 安全特性\n\n- **双重加密体系**：\n  - 门锁密码：使用 BCrypt 加密存储\n  - 数据加密：AES-256-CBC 加密\n  - 密钥派生：PBKDF2（100,000 次迭代）\n\n- **本地存储**：所有数据存储在本地，不上传云端\n\n- **忘记密码**：数据无法恢复，只能格式化密码本\n\n## ✨ 功能特性\n\n### 密码管理\n- ✅ 添加/编辑/删除密码\n- ✅ 密码强度分析（弱/中/强）\n- ✅ 一键复制账号和密码\n- ✅ 支持备注\n\n### 分组管理\n- ✅ 多级分组嵌套\n- ✅ 拖拽排序\n- ✅ 拖拽转移密码到其他分组\n- ✅ 分组颜色标记\n\n### 搜索功能\n- ✅ 实时搜索（300ms 防抖）\n- ✅ 搜索范围：分组名、帐号名、网址\n- ✅ 不区分大小写\n\n### 导入导出\n- ✅ 导出为 CSV 格式\n- ✅ 导入 Chrome/Edge 导出文件\n- ✅ 冲突处理策略：跳过/覆盖/合并\n\n### 密码生成器\n- ✅ 自定义长度（8-64位）\n- ✅ 可选字符类型：大写、小写、数字、特殊符号\n- ✅ 排除相似字符\n- ✅ 一键复制\n\n### 自动填充\n- ✅ 调用 Mulby API 模拟输入\n- ✅ 一键填充密码框\n\n### 主题\n- ✅ 深色/浅色模式\n- ✅ 响应式布局\n\n## 🚀 快速开始\n\n### 安装依赖\n```bash\nnpm install\n```\n\n### 开发模式\n```bash\nnpm run dev\n```\n\n### 构建\n```bash\nnpm run build\n```\n\n### 打包\n```bash\nnpm run pack\n```\n\n## 📁 项目结构\n\n```\npassword-manager/\n├── src/\n│   ├── components/        # React 组件\n│   │   ├── LockScreen.tsx      # 门锁界面\n│   │   ├── Header.tsx          # 顶部栏\n│   │   ├── Sidebar.tsx         # 左侧分组抽屉\n│   │   ├── PasswordList.tsx    # 密码列表\n│   │   ├── PasswordCard.tsx    # 密码卡片\n│   │   ├── DetailPanel.tsx     # 右侧详情面板\n│   │   ├── PasswordGenerator.tsx # 密码生成器\n│   │   ├── ImportDialog.tsx    # 导入对话框\n│   │   ├── ExportDialog.tsx    # 导出对话框\n│   │   └── Toast.tsx           # 提示消息\n│   ├── context/           # 状态管理\n│   │   └── PasswordContext.tsx # 全局状态\n│   ├── hooks/             # 自定义 Hooks\n│   │   ├── useDebounce.ts      # 防抖 Hook\n│   │   └── useMulby.ts       # Mulby API Hook\n│   ├── services/          # 服务层\n│   │   ├── encryption.ts       # 加密服务\n│   │   ├── storage.ts          # 存储服务\n│   │   └── importer.ts         # 导入导出服务\n│   ├── types/             # 类型定义\n│   │   └── index.ts\n│   ├── utils/             # 工具函数\n│   │   ├── crypto.ts          # 加密工具\n│   │   ├── strength.ts        # 密码强度分析\n│   │   ├── helpers.ts         # 辅助函数\n│   │   └── constants.ts       # 常量\n│   ├── main.ts            # 插件入口\n│   └── ui/\n│       ├── App.tsx        # 主应用组件\n│       ├── index.tsx      # UI 入口\n│       └── index.html     # HTML 模板\n├── ui/                    # 构建输出 (Vite)\n├── dist/                  # 构建输出 (后端)\n├── package.json\n├── vite.config.ts\n├── tailwind.config.js\n└── manifest.json\n```\n\n## 📝 使用说明\n\n### 首次使用\n1. 打开插件\n2. 设置门锁密码（用于保护密码库）\n3. 开始添加密码\n\n### 添加密码\n1. 点击「添加密码」按钮\n2. 填写网站名称、账号、密码等信息\n3. 选择所属分组\n4. 保存\n\n### 导入密码\n1. 点击「导入」按钮\n2. 选择 CSV 文件（Chrome/Edge 导出格式）\n3. 选择冲突处理策略\n4. 确认导入\n\n### 导出密码\n1. 点击「导出」按钮\n2. 选择导出格式（CSV/JSON）\n3. 选择是否包含密码明文\n4. 点击导出\n\n## 🔧 技术栈\n\n- **React 18** - UI 框架\n- **TypeScript** - 类型安全\n- **Tailwind CSS v3** - 样式\n- **Vite** - 构建工具\n- **@dnd-kit** - 拖拽功能\n- **crypto-js** - 加密库\n- **PapaParse** - CSV 解析\n- **Lucide React** - 图标库\n\n## 📄 许可证\n\nMIT",
       "icon": {
         "type": "url",
@@ -348,7 +348,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "957f425922b60c0f6fa13e8304b4f84b51c09fae4c96e8902d03d70009747172",
+      "sha256": "0b3be9008da21153f0f75a4deab4562f785c24d09e9519d8c6c9abac83aa0c1b",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/password-manager"
     },
@@ -360,7 +360,7 @@
       "author": "Mulby",
       "description": "将PDF文件按页面拆分为多个独立文档，支持自动拆分和手动拆分",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/pdf-tools-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:07:30.089Z",
+      "lastPackageTime": "2026-03-15T05:06:28.110Z",
       "details": "# pdf-tools\n\n插件描述\n\n## 功能特性\n\n- 功能 1\n- 功能 2\n- 功能 3\n\n## 触发方式\n\n- `pdf-tools` - 主功能\n\n## 开发\n\n### 安装依赖\n\n```bash\nnpm install\n```\n\n### 开发模式\n\n```bash\nnpm run dev\n```\n\n### 构建\n\n```bash\nnpm run build\n```\n\n### 打包\n\n```bash\nnpm run pack\n```\n\n## 项目结构\n\n```\npdf-tools/\n├── manifest.json              # 插件配置\n├── package.json\n├── src/\n│   ├── main.ts                # 后端入口\n│   ├── ui/\n│   │   ├── App.tsx            # 主应用\n│   │   ├── main.tsx           # UI 入口\n│   │   ├── index.html         # HTML 模板\n│   │   ├── styles.css         # 全局样式\n│   │   ├── hooks/\n│   │   │   └── useMulby.ts  # Mulby API Hook\n│   │   └── types/\n│   │       └── mulby.d.ts   # 类型定义\n├── dist/                      # 后端构建输出\n├── ui/                        # UI 构建输出\n└── icon.png                   # 插件图标\n```\n\n## 许可证\n\nMIT License",
       "icon": {
         "type": "url",
@@ -372,7 +372,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "c9e65d50e94e9446181ebd0a2aed5dc8887b8c1664646ea1ba06d90a69616272",
+      "sha256": "856247bd65057e11584b2fee01c7519b77394458ce099852ed18ebff3ccf536e",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/pdf-tools"
     },
@@ -384,7 +384,7 @@
       "author": "Mulby",
       "description": "简单好用的二维码生成与识别工具",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/qrcode-helper-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:07:33.337Z",
+      "lastPackageTime": "2026-03-15T05:06:31.781Z",
       "icon": {
         "type": "url",
         "value": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/plugins/qrcode-helper/icon.png"
@@ -395,7 +395,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "5235c95b4c10b043f909aa139677745444a64b4ce16281aa5154c17631cca9b0",
+      "sha256": "7f36df35350db124e698b50a220a33fd97405396299397089f797d046d0c9479",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/qrcode-helper"
     },
@@ -407,7 +407,7 @@
       "author": "Mulby",
       "description": "JavaScript正则表达式编辑器，支持实时测试、匹配高亮和常用模式",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/reg_helper-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:07:36.145Z",
+      "lastPackageTime": "2026-03-15T05:06:34.935Z",
       "details": "# reg_helper - iOS 26 拟态玻璃效果正则表达式编辑器\n\n一个基于苹果iOS 26设计语言的现代化正则表达式编辑器插件，采用拟态玻璃效果（毛玻璃效果）设计，提供优雅、直观的用户体验。\n\n## ✨ 设计特色\n\n### 🎨 iOS 26 拟态玻璃效果\n- **毛玻璃背景**：采用半透明背景和模糊效果\n- **柔和阴影**：精致的阴影层次感\n- **流畅动画**：平滑的过渡和交互反馈\n- **现代配色**：苹果风格的色彩系统\n- **响应式布局**：适配不同屏幕尺寸\n\n### 🎯 核心功能\n- **实时正则表达式编辑**：输入时自动匹配\n- **常用模式库**：10个预设正则表达式模式\n- **标志切换**：支持g/i/m/s/u/y所有正则标志\n- **结果高亮**：匹配内容实时高亮显示\n- **详细分析**：显示匹配位置、长度和捕获组\n- **错误验证**：实时语法检查和友好提示\n\n## 🚀 快速开始\n\n### 安装插件\n1. 将插件文件夹复制到Mulby的插件目录\n2. 重启Mulby或刷新插件列表\n3. 插件将自动出现在可用插件中\n\n### 启动方式\n- **方式1**：在Mulby主界面输入 `regex`\n- **方式2**：在Mulby主界面输入 `正则`\n- **方式3**：通过快捷键（如果配置了快捷键）\n\n## 🎨 界面设计\n\n### 布局结构\n```\n┌─────────────────────────────────────────────────────┐\n│ 侧边栏                     │ 主内容区               │\n│ ├─ 常用模式面板            │ ├─ 正则输入面板        │\n│ │  └─ 10个预设模式         │ │  └─ 表达式输入       │\n│ │                         │ │  └─ 标志输入         │\n│ ├─ 标志面板                │ ├─ 测试文本面板        │\n│ │  └─ 6个匹配标志          │ │  └─ 文本输入区       │\n│ │                         │ ├─ 匹配结果面板        │\n│ │                         │ │  └─ 高亮显示         │\n│ │                         │ │  └─ 匹配详情         │\n│ │                         │ ├─ 操作面板            │\n│ │                         │ │  └─ 复制功能         │\n│ │                         │ ├─ 信息面板            │\n│ │                         │ │  └─ 正则信息         │\n└─────────────────────────────────────────────────────┘\n```\n\n### 视觉特性\n- **毛玻璃效果**：所有面板采用半透明背景和模糊效果\n- **圆角设计**：统一的圆角半径，符合iOS设计规范\n- **渐变色彩**：使用苹果风格的色彩渐变\n- **微交互**：悬停、点击等交互效果\n- **主题适配**：自动适配亮色/暗色主题\n\n## 🔧 功能详解\n\n### 1. 常用模式面板\n- **一键应用**：点击模式卡片快速应用正则表达式\n- **图标标识**：每个模式都有对应的图标\n- **预览显示**：显示正则表达式预览\n- **收起/展开**：可折叠的面板设计\n\n### 2. 标志面板\n- **视觉反馈**：激活的标志有特殊样式\n- **工具提示**：悬停显示标志说明\n- **快速切换**：点击切换标志状态\n\n### 3. 正则输入面板\n- **语法高亮**：实时验证和状态显示\n- **分隔符**：使用/作为正则表达式分隔符\n- **标志输入**：独立的标志输入框\n\n### 4. 测试文本面板\n- **多行输入**：支持大段文本输入\n- **实时匹配**：输入时自动执行匹配\n- **语法检查**：实时验证正则表达式\n\n### 5. 匹配结果面板\n- **高亮显示**：匹配内容在文本中高亮\n- **匹配计数**：显示匹配数量\n- **详细分析**：显示每个匹配的详细信息\n\n### 6. 操作面板\n- **复制正则**：复制完整的正则表达式\n- **复制匹配**：复制所有匹配结果\n- **视觉反馈**：操作按钮有悬停和点击效果\n\n### 7. 信息面板\n- **完整正则**：显示当前正则表达式\n- **转义字符串**：显示转义后的模式\n- **状态指示**：显示正则表达式是否有效\n\n## 🎮 使用示例\n\n### 示例1：提取邮箱地址\n1. 点击侧边栏\"邮箱地址\"模式卡片\n2. 在测试文本区粘贴包含邮箱的文本\n3. 查看高亮显示的邮箱地址\n4. 点击\"复制匹配\"按钮复制所有邮箱\n\n### 示例2：验证手机号码\n1. 点击侧边栏\"手机号码\"模式卡片\n2. 输入要验证的手机号码\n3. 查看是否匹配成功\n4. 根据需要调整正则表达式\n\n### 示例3：清理HTML标签\n1. 点击侧边栏\"HTML标签\"模式卡片\n2. 粘贴HTML文本\n3. 查看匹配的HTML标签\n4. 使用替换功能清理标签\n\n## 🛠️ 技术实现\n\n### 前端技术栈\n- **React 18**：现代化的UI框架\n- **TypeScript**：类型安全的JavaScript\n- **CSS Modules**：模块化的样式管理\n- **Vite**：快速的构建工具\n\n### 设计系统\n- **CSS Variables**：动态主题支持\n- **Flexbox/Grid**：响应式布局\n- **CSS Transitions**：平滑的动画效果\n- **Backdrop Filter**：毛玻璃效果实现\n\n### 构建工具\n- **esbuild**：快速的TypeScript编译\n- **Vite**：现代化的前端构建工具\n- **PostCSS**：CSS处理工具\n\n## 📱 响应式设计\n\n### 桌面端\n- **两栏布局**：侧边栏 + 主内容区\n- **大屏幕优化**：充分利用屏幕空间\n- **鼠标交互**：悬停效果和工具提示\n\n### 移动端\n- **单栏布局**：垂直堆叠所有面板\n- **触摸优化**：更大的点击区域\n- **手势支持**：滑动和点击操作\n\n### 平板端\n- **自适应布局**：根据屏幕尺寸调整\n- **横竖屏适配**：自动调整布局方向\n- **触摸友好**：优化的触摸交互\n\n## 🎨 主题系统\n\n### 亮色主题\n- **背景色**：浅灰色渐变\n- **文本色**：深灰色\n- **强调色**：蓝色系\n- **玻璃效果**：半透明白色背景\n\n### 暗色主题\n- **背景色**：深灰色渐变\n- **文本色**：浅灰色\n- **强调色**：蓝色系\n- **玻璃效果**：半透明黑色背景\n\n### 自动切换\n- **系统跟随**：自动跟随系统主题\n- **手动切换**：支持手动切换主题\n- **平滑过渡**：主题切换时的平滑动画\n\n## 🔧 开发指南\n\n### 环境要求\n- Node.js 16+\n- npm 8+\n\n### 安装依赖\n```bash\nnpm install\n```\n\n### 开发模式\n```bash\nnpm run dev\n```\n\n### 构建插件\n```bash\nnpm run build\n```\n\n### 打包插件\n```bash\nnpm run pack\n```\n\n## 📄 文件结构\n```\nreg_helper/\n├── manifest.json          # 插件配置\n├── package.json          # 项目依赖\n├── README.md            # 项目说明\n├── preview.html         # 设计预览\n├── src/\n│   ├── main.ts         # 插件主逻辑\n│   ├── ui/\n│   │   ├── App.tsx    # 主界面组件\n│   │   ├── App.css    # iOS 26样式\n│   │   ├── main.tsx   # React入口\n│   │   └── styles.css # 基础样式\n└── dist/              # 构建输出\n```\n\n## 🤝 贡献指南\n\n1. Fork 项目\n2. 创建功能分支 (`git checkout -b feature/AmazingFeature`)\n3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)\n4. 推送到分支 (`git push origin feature/AmazingFeature`)\n5. 开启 Pull Request\n\n## 📝 许可证\n\n本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情\n\n## 🙏 致谢\n\n- 苹果iOS设计团队 - 设计灵感来源\n- React团队 - 优秀的UI框架\n- 所有贡献者 - 感谢你们的支持\n\n---\n\n**体验现代化的正则表达式编辑，享受iOS 26的拟态玻璃效果设计！** 🎨✨",
       "icon": {
         "type": "url",
@@ -419,7 +419,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "76b02114a8df5d4ddfaf246154577d8e94048d40a1869a6d8909a8996eb1b42a",
+      "sha256": "c3cc8fcf4d05098e0a5e5790d2631d0541e1f4e08205f10436ef492430a076e1",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/reg_helper"
     },
@@ -431,7 +431,7 @@
       "author": "Mulby",
       "description": "演示后台任务和任务调度功能的示例插件",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/scheduler-demo-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:07:41.476Z",
+      "lastPackageTime": "2026-03-15T05:06:41.410Z",
       "details": "# scheduler-demo\n\n插件描述\n\n## 功能特性\n\n- 功能 1\n- 功能 2\n- 功能 3\n\n## 触发方式\n\n- `scheduler-demo` - 主功能\n\n## 开发\n\n### 安装依赖\n\n```bash\nnpm install\n```\n\n### 开发模式\n\n```bash\nnpm run dev\n```\n\n### 构建\n\n```bash\nnpm run build\n```\n\n### 打包\n\n```bash\nnpm run pack\n```\n\n## 项目结构\n\n```\nscheduler-demo/\n├── manifest.json              # 插件配置\n├── package.json\n├── src/\n│   ├── main.ts                # 后端入口\n│   ├── ui/\n│   │   ├── App.tsx            # 主应用\n│   │   ├── main.tsx           # UI 入口\n│   │   ├── index.html         # HTML 模板\n│   │   ├── styles.css         # 全局样式\n│   │   ├── hooks/\n│   │   │   └── useMulby.ts  # Mulby API Hook\n│   │   └── types/\n│   │       └── mulby.d.ts   # 类型定义\n├── dist/                      # 后端构建输出\n├── ui/                        # UI 构建输出\n└── icon.png                   # 插件图标\n```\n\n## 许可证\n\nMIT License",
       "icon": {
         "type": "url",
@@ -443,7 +443,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "fa2575a72f15ab16c92111d8e701f4497756d1ab68ce8fe77b4404e70fae6652",
+      "sha256": "958737209282f1e14cb4e8a359d39f380b6900dcca99e614435c308292b2a973",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/scheduler-demo"
     },
@@ -455,7 +455,7 @@
       "author": "Mulby",
       "description": "插件描述",
       "downloadUrl": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/releases/计算稿纸-1.0.0.inplugin",
-      "lastPackageTime": "2026-03-13T05:07:44.319Z",
+      "lastPackageTime": "2026-03-15T05:06:44.671Z",
       "icon": {
         "type": "url",
         "value": "https://raw.githubusercontent.com/Unicellular-SU/mulby_plugins/main/plugins/计算稿纸/icon.png"
@@ -466,7 +466,7 @@
           "caption": "主界面"
         }
       ],
-      "sha256": "fb5277f6df75fabb92c1ed091b3da99ecd62fdab9e538a30d47e588c30a9ed89",
+      "sha256": "b2b325ed91e2b49d41fe9aa081d3c10cf686903079c0e61f2c90695a12f33e59",
       "homepage": "https://github.com/Unicellular-SU/mulby_plugins",
       "repository": "https://github.com/Unicellular-SU/mulby_plugins/tree/main/plugins/计算稿纸"
     }
